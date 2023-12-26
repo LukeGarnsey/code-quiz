@@ -1,4 +1,6 @@
-
+*{
+    font-size: 21px;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -12,6 +14,16 @@ header{
     color: black;
     padding-right: 40px;
 }
-main {
-    margin-left: 100px;
+
+.button{
+    background-color: #40055d; 
+    border: none;
+    color: white;
+    padding: 15px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
 }

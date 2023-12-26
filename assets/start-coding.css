@@ -1,0 +1,13 @@
+#start-coding{
+    text-align: center;
+    margin: 75px 15%;
+}
+#start-coding h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em
+}
+
+#start-coding button:hover{
+    background-color: #a430de;
+}
