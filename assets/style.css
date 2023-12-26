@@ -1,0 +1,17 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+#view-high-score {
+    color: pink;
+    padding-left: 40px;
+    
+}
+#time {
+    color: black;
+    padding-right: 40px;
+}
+main {
+    margin-left: 100px;
+}
