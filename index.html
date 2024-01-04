@@ -25,10 +25,10 @@
         <div id="quiz-question">
             <h1>Commonly used data types do not include:</h1>
             <div>
-                <button class="button quiz-button"><span>1. </span>strings</button>
-                <button class="button quiz-button"><span>2. </span>boolean</button>
-                <button class="button quiz-button"><span>3. </span>alerts</button>
-                <button class="button quiz-button"><span>4. </span>numbers</button>
+                <button id="quiz-button-1" class="button quiz-button"><span>1. </span>strings</button>
+                <button id="quiz-button-2" class="button quiz-button"><span>2. </span>boolean</button>
+                <button id="quiz-button-3" class="button quiz-button"><span>3. </span>alerts</button>
+                <button id="quiz-button-4" class="button quiz-button"><span>4. </span>numbers</button>
             </div>
             <hr>
             <h3 id="wrong">
@@ -43,7 +43,7 @@
             <h1>All done!</h1>
                 
             <p>
-                Your final score is 22.
+                Your final score is <span id="score">NOpe</span>.
             </p>
             <form onsubmit="submitHighScore(); return false;">Enter Score: 
                 <input type="text" id="fname" name="fname" value="John">
