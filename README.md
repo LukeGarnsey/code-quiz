@@ -5,4 +5,7 @@ Wrong answers will subtract from your total score(timer).
 
 [https://lukegarnsey.github.io/code-quiz/](https://lukegarnsey.github.io/code-quiz/)
 
-![alt text](./assets/password-generator-image.png)
+![alt text](./assets/readme-images/main.png)
+![alt text](./assets/readme-images/questions.png)
+![alt text](./assets/readme-images/form.png)
+![alt text](./assets/readme-images/scores.png)
