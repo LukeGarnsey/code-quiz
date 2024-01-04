@@ -20,6 +20,7 @@ var finalScore = 0;
 
 function startTimer(startTime){
     finalScore = startTime;
+    timer.innerHTML = finalScore;
     quizTimerInterval = setInterval(countdown, 1000);
 }
 function countdown(){
