@@ -14,14 +14,6 @@ const answerFour = document.getElementById("quiz-button-4");
 
 const popupDiv = document.getElementById("popup");
 
-
-// startCodingElement.style.display = "none";
-// quizQuestionElement.style.display = "none";
-// finishedElement.style.display = "none";
-// wrongElement.style.display = "none";
-// correctElement.style.display = "none";
-
-
 var popupInterval = undefined;
 var quizTimerInterval;
 var finalScore = 0;
@@ -38,6 +30,8 @@ function countdown(){
     finalScore--;
     timer.innerHTML = finalScore;
 }
+
+//Initial Button Click events
 document.getElementById("view-high-score").onclick = loadHighScores
 startCodingElement.getElementsByTagName("button")[0].onclick = function(){
     startTimer(60);
@@ -45,6 +39,7 @@ startCodingElement.getElementsByTagName("button")[0].onclick = function(){
     quizQuestionElement.style.display = "block";
     askQuestion(0);
 }
+
 function askQuestion(index){
 
     question.textContent = questions[index].question;
