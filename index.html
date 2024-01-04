@@ -30,6 +30,20 @@
                 <button id="quiz-button-3" class="button quiz-button"><span>3. </span>alerts</button>
                 <button id="quiz-button-4" class="button quiz-button"><span>4. </span>numbers</button>
             </div>
+        </div>
+        
+        <div id="finished">
+            <h1>All done!</h1>
+                
+            <p>
+                Your final score is <span id="score">---</span>.
+            </p>
+            <form onsubmit="submitHighScore(); return false;">Enter Score: 
+                <input type="text" id="fname" name="fname" value="John">
+                <input class="form-button" type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="popup">
             <hr>
             <h3 id="wrong">
                 Wrong!
@@ -38,19 +52,6 @@
                 Correct!
             </h3>
         </div>
-        
-        <div id="finished">
-            <h1>All done!</h1>
-                
-            <p>
-                Your final score is <span id="score">NOpe</span>.
-            </p>
-            <form onsubmit="submitHighScore(); return false;">Enter Score: 
-                <input type="text" id="fname" name="fname" value="John">
-                <input class="form-button" type="submit" value="Submit">
-            </form>
-        </div>
-        
     </main>
 
     <script src="./assets/javascript/script.js"></script>
