@@ -1,0 +1,27 @@
+#quiz-question{
+    text-align: left;
+    margin: 75px 15%;
+}
+#quiz-question h1{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 2em;
+    min-width: 275px;
+}
+#quiz-question hr {
+    margin-top: 50px;
+}
+#quiz-question h3 {
+    font-size: 27px;
+    color: #888888a8;
+}
+#quiz-question div{
+    display: inline-grid;
+}
+#quiz-question button:hover{
+    background-color: #a430de;
+}
+.quiz-button {
+    min-width: 275px;
+    text-align: left;
+}

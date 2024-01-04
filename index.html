@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="./assets/start-coding.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/start-coding.css">
+    <link rel="stylesheet" href="./assets/css/quiz-question.css">
     <title>Code Quiz</title>
 </head>
 <body>
     <header>
-        <h2 id="view-high-score">View high scores</h2>
+        <button id="view-high-score">View high scores</button>
         <h2 id="time">Time: <span>0</span></h2>
     </header>
 
     <main>
-        <!-- <div id="start-coding">
+        <div id="start-coding">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
             <button class="button">Start Quiz!</button>
-        </div> -->
+        </div>
+
+
         <div id="quiz-question">
             <h1>Commonly used data types do not include:</h1>
             <div>
@@ -28,11 +31,28 @@
                 <button class="button quiz-button"><span>4. </span>numbers</button>
             </div>
             <hr>
-            <h3>
+            <h3 id="wrong">
                 Wrong!
+            </h3>
+            <h3 id = "correct">
+                Correct!
             </h3>
         </div>
         
+        <div id="finished">
+            <h1>All done!</h1>
+                
+            <p>
+                Your final score is 22.
+            </p>
+            <form onsubmit="submitHighScore(); return false;">Enter Score: 
+                <input type="text" id="fname" name="fname" value="John">
+                <input class="form-button" type="submit" value="Submit">
+            </form>
+        </div>
+        
     </main>
+
+    <script src="./assets/javascript/script.js"></script>
 </body>
 </html>

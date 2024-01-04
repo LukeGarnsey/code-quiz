@@ -1,0 +1,36 @@
+#high-scores{
+    margin: 75px 22%;
+}
+#high-scores h1{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 2em;
+    min-width: 275px;
+}
+#high-scores ol{
+    counter-reset: myOrderedListItemsCounter;
+    padding-left: 0;
+}
+#high-scores ol li{
+    list-style-type: none;
+    position: relative;
+    padding: 8px;
+}
+
+ol li:before {
+    counter-increment: myOrderedListItemsCounter;
+    content: counter(myOrderedListItemsCounter)".";
+    margin-right: .5em;
+}
+
+#high-scores ol li:nth-child(odd){
+    background-color: #a430de40;
+}
+
+#high-scores ol li:nth-child(even){
+    background-color: #40055d40;
+}
+
+#high-scores div{
+    display: inline;
+}
