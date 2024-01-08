@@ -17,7 +17,20 @@ const popupDiv = document.getElementById("popup");
 var popupInterval = undefined;
 var quizTimerInterval;
 var finalScore = 0;
-
+var questions = undefined;
+startCodingElement.getElementsByTagName("button")[0].style.visibility = 'Hidden';
+fetch("./assets/questions/series-one.json")
+    .then(response => response.json())
+    .then(function(data){
+        questions = data;
+        startCodingElement.getElementsByTagName("button")[0].style.visibility = 'Visible';
+        startCodingElement.getElementsByTagName("button")[0].onclick = function(){
+            startTimer(60);
+            startCodingElement.style.display = "none";
+            quizQuestionElement.style.display = "block";
+            askQuestion(0);
+        }
+    });
 function startTimer(startTime){
     finalScore = startTime;
     timer.innerHTML = finalScore;
@@ -34,12 +47,7 @@ function countdown(){
 
 //Initial Button Click events
 document.getElementById("view-high-score").onclick = loadHighScores
-startCodingElement.getElementsByTagName("button")[0].onclick = function(){
-    startTimer(60);
-    startCodingElement.style.display = "none";
-    quizQuestionElement.style.display = "block";
-    askQuestion(0);
-}
+
 
 function askQuestion(index){
 
@@ -125,45 +133,45 @@ function loadHighScores(){
     window.location.href="./assets/html/high-scores.html";
 }
 
-const questions =[
-{
-    "question": "Commonly used data types DO Not include: ",
-    "answerOne": "strings",
-    "answerTwo": "booleans",
-    "answerThree": "alerts",
-    "answerFour": "numbers",
-    "answer": "3"
-},
-{
-    "question": "The condition in an if / else statement is enclosed with ________.",
-    "answerOne": "quotes",
-    "answerTwo": "curly brackets",
-    "answerThree": "parenthesis",
-    "answerFour": "square brackets",
-    "answer": "3"
-},
-{
-    "question": "Arrays in JavaScript can be used to store ________.",
-    "answerOne": "numbers and strings",
-    "answerTwo": "other arrays",
-    "answerThree": "booleans",
-    "answerFour": "all of the above",
-    "answer": "4"
-},
-{
-    "question": "String values must be enclosed within ______ when being assigned to variables.",
-    "answerOne": "commas",
-    "answerTwo": "curly brackets",
-    "answerThree": "quotes",
-    "answerFour": "parenthesis",
-    "answer": "2"
-},
-{
-    "question": "A very useful tool used during development and debugging for printing content to the debugger is:",
-    "answerOne": "JavaScript",
-    "answerTwo": "terminal/bash",
-    "answerThree": "for loops",
-    "answerFour": "console.log",
-    "answer": "4"
-},
-];
+// const questions =[
+// {
+//     "question": "Commonly used data types DO Not include: ",
+//     "answerOne": "strings",
+//     "answerTwo": "booleans",
+//     "answerThree": "alerts",
+//     "answerFour": "numbers",
+//     "answer": "3"
+// },
+// {
+//     "question": "The condition in an if / else statement is enclosed with ________.",
+//     "answerOne": "quotes",
+//     "answerTwo": "curly brackets",
+//     "answerThree": "parenthesis",
+//     "answerFour": "square brackets",
+//     "answer": "3"
+// },
+// {
+//     "question": "Arrays in JavaScript can be used to store ________.",
+//     "answerOne": "numbers and strings",
+//     "answerTwo": "other arrays",
+//     "answerThree": "booleans",
+//     "answerFour": "all of the above",
+//     "answer": "4"
+// },
+// {
+//     "question": "String values must be enclosed within ______ when being assigned to variables.",
+//     "answerOne": "commas",
+//     "answerTwo": "curly brackets",
+//     "answerThree": "quotes",
+//     "answerFour": "parenthesis",
+//     "answer": "2"
+// },
+// {
+//     "question": "A very useful tool used during development and debugging for printing content to the debugger is:",
+//     "answerOne": "JavaScript",
+//     "answerTwo": "terminal/bash",
+//     "answerThree": "for loops",
+//     "answerFour": "console.log",
+//     "answer": "4"
+// },
+// ];

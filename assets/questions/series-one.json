@@ -1,0 +1,42 @@
+[
+  {
+      "question": "Commonly used data types DO Not include: ",
+      "answerOne": "strings",
+      "answerTwo": "booleans",
+      "answerThree": "alerts",
+      "answerFour": "numbers",
+      "answer": "3"
+  },
+  {
+      "question": "The condition in an if / else statement is enclosed with ________.",
+      "answerOne": "quotes",
+      "answerTwo": "curly brackets",
+      "answerThree": "parenthesis",
+      "answerFour": "square brackets",
+      "answer": "3"
+  },
+  {
+      "question": "Arrays in JavaScript can be used to store ________.",
+      "answerOne": "numbers and strings",
+      "answerTwo": "other arrays",
+      "answerThree": "booleans",
+      "answerFour": "all of the above",
+      "answer": "4"
+  },
+  {
+      "question": "String values must be enclosed within ______ when being assigned to variables.",
+      "answerOne": "commas",
+      "answerTwo": "curly brackets",
+      "answerThree": "quotes",
+      "answerFour": "parenthesis",
+      "answer": "2"
+  },
+  {
+      "question": "A very useful tool used during development and debugging for printing content to the debugger is:",
+      "answerOne": "JavaScript",
+      "answerTwo": "terminal/bash",
+      "answerThree": "for loops",
+      "answerFour": "console.log",
+      "answer": "4"
+  }
+]
